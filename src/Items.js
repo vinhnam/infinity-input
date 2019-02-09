@@ -10,7 +10,7 @@ class Items extends Component {
                      class="form-control"
                      placeholder="write something, please"
                      defaultValue={item.text}
-                     onChange={() => this.props.handleInput(item.key)}
+                     onChange={() => this.props.onChangeEventHandler(item.key)}
                   />
                   <div class="input-group-btn">
                      {item.key !== this.props.currentItem.key ? (

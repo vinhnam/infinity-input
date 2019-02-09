@@ -24,7 +24,7 @@ class App extends Component {
       });
    };
 
-   handleInput = key => {
+   onChangeEventHandler = key => {
       if (key == this.state.currentItem.key) this.addItem();
    };
 
@@ -42,7 +42,7 @@ class App extends Component {
             <Items
                allItems={this.state.items}
                deleteItem={this.deleteItem}
-               handleInput={this.handleInput}
+               onChangeEventHandler={this.onChangeEventHandler}
                currentItem={this.state.currentItem}
             />
          </div>
